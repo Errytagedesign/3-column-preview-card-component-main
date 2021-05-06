@@ -1,0 +1,181 @@
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+
+/* ============General Layout=============== */
+
+.container {
+
+    width: 100%;
+    max-width: 900px;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+.card1 {
+
+    background-color: hsl(31, 77%, 52%);
+    padding: 2rem;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+.card1 button {
+
+    color: hsl(31, 77%, 52%);
+}
+
+
+
+.card2 {
+
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem;
+}
+
+.card2 button {
+
+    color: hsl(184, 100%, 22%);
+
+}
+
+
+
+.card3 {
+
+    background-color: hsl(179, 100%, 13%);
+    padding: 2rem;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+
+.card3 button {
+
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+img {
+
+    width: 80px;
+    height: 50px;
+
+}
+
+
+
+
+
+
+/* ============Typography=============== */
+
+h1, p {
+
+    color: hsl(0, 0%, 95%);
+}
+
+h1 {
+
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+p {
+
+    font-size: 1.1rem;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+button {
+
+    padding: 1em 2em;
+    font-family: "lexend Deca", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 50px;
+    border: none;
+    margin-top: 4em;
+    margin-bottom: 1em;
+
+}
+
+
+button:hover {
+
+    border:  hsl(0, 0%, 95%) solid 2px;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+@media (max-width: 767px) {
+
+
+    .container {
+
+        width: 350px;
+    }
+
+    button {
+
+        margin-top: 1em;
+      
+    }
+    
+    p {
+
+        font-size: 1.2rem;
+    }
+
+
+    
+
+    .card1 {
+       border-top-left-radius: 6px;
+       border-top-right-radius: 6px;
+       border-bottom-left-radius: 0;
+   
+    }
+
+
+    .card3 {
+
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 0;
+    }
+
+
+
+    
+}
